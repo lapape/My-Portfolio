@@ -1,0 +1,74 @@
+:root {
+  --purple: #600080;
+  --aqua: aquamarine;
+  --white: antiquewhite;
+  --darkgray: darkgray;
+}
+body {
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15%;
+  width: 100%;
+  background-color: #600080;
+  color: antiquewhite;
+  border-bottom: 5px darkgray solid;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  margin-right: 25px;
+}
+#main-header li {
+  list-style: none;
+  display: inline;
+}
+
+a {
+  color: aquamarine;
+  text-decoration: none;
+}
+
+h1 {
+  margin-left: 25px;
+}
+
+.Main-Project {
+  display: flex;
+  justify-content: center;
+}
+
+#Horiseon {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Horiseon-image {
+  width: 75%;
+}
+
+#Horiseon header {
+  align-content: center;
+  width: 75%;
+  height: 50px;
+  text-align: center;
+  padding: 35px 0;
+  background-color: var(--purple);
+  color: var(--white);
+  font-size: 40px;
+}
+
+#About-Me {
+  text-align: center;
+}
+
+#My-Projects {
+  text-align: center;
+}
