@@ -1,3 +1,8 @@
+/* setting box bhavious so */
+* {
+  box-sizing: border-box;
+}
+/* setting reusable colors */
 :root {
   --purple: #600080;
   --aqua: aquamarine;
@@ -10,6 +15,7 @@ body {
   margin: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+/* setting up flex container for header with spacing and design */
 #main-header {
   display: flex;
   justify-content: space-between;
@@ -20,17 +26,20 @@ body {
   color: antiquewhite;
   border-bottom: 5px darkgray solid;
 }
+/* make ul a flex container so links are evenly spaced */
 nav ul {
   display: flex;
   justify-content: space-between;
   min-width: 300px;
   margin-right: 25px;
 }
+/* remove default list stlying (bullets) and make items list horizontally */
 #main-header li {
   list-style: none;
   display: inline;
 }
 
+/* remove default link text decoration (underline) */
 a {
   color: aquamarine;
   text-decoration: none;
@@ -40,11 +49,11 @@ h1 {
   margin-left: 25px;
 }
 
-.Main-Project {
-  display: flex;
-  justify-content: center;
+p {
+  margin-left: 50px;
 }
 
+/* set up flex container to center the main project image and header */
 #Horiseon {
   display: flex;
   justify-content: center;
@@ -53,54 +62,69 @@ h1 {
 }
 
 #Horiseon-image {
-  width: 75%;
+  width: 1427px;
+  margin-bottom: 10px;
 }
 
 #Horiseon header {
-  align-content: center;
-  width: 75%;
-  height: 50px;
+  width: 1427px;
+  height: 70px;
   text-align: center;
-  padding: 35px 0;
   background-color: var(--purple);
   color: var(--white);
   font-size: 40px;
+  padding-top: 10px;
 }
 
+/* set flex container to align content of the About-me section: items stacked on top of each other and centered */
 #About-Me {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
+#About-Me img {
+  height: 300px;
+  width: 300px;
+  border: var(--purple) solid 5px;
+}
 #My-Projects {
   text-align: center;
-}
-
-.box {
-  height: 300px;
-  width: 500px;
-  margin: 10px;
 }
 
 .box-container {
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
 }
-
+.box {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  align-items: center;
+  flex: 0 0 50%;
+}
 .box-container img {
   height: 300px;
   width: 500px;
+  display: inline;
 }
 
 .box-header {
   position: relative;
-  margin: 10px;
   background-color: var(--purple);
   color: var(--white);
+  height: 50px;
+  width: 500px;
+  margin: 0 0 0 0;
+  text-align: center;
+  justify-content: center;
+  padding-top: 10px;
 }
 
 footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
   height: 15%;
   width: 100%;
@@ -115,4 +139,9 @@ footer ul {
   justify-content: space-between;
   min-width: 300px;
   margin-right: 25px;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
 }
