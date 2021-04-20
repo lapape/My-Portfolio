@@ -19,10 +19,6 @@ Click the images to go to the deployed project.
 Click the contact info in the bottom right to access my contact information.
 [gif of contact links](./assets/images/contact-links.gif)
 
-Provide instructions and examples for use. Include screenshots as needed.
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-`md ![alt text](assets/images/screenshot.png) `
-
 ## Credits
 
 I would like to thank my study group: Alex Jurgs, Lauren Gabaldon, Chip Long, Joshua Lee, and Jared Sutch. They were a helpful set of fresh eyes to help me with troubleshooting.
