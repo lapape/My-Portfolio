@@ -1,13 +1,9 @@
-/* setting box bhavious so */
-* {
-  box-sizing: border-box;
-}
 /* setting reusable colors */
 :root {
   --purple: #600080;
   --aqua: aquamarine;
   --white: antiquewhite;
-  --darkgray: darkgray;
+  --darkgray: #595959;
   --darkblue: #000066;
 }
 body {
@@ -15,16 +11,16 @@ body {
   margin: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-/* setting up flex container for header with spacing and design */
+/* setting up flex container for header with spacing (name on left, links on right) and design */
 #main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 15%;
   width: 100%;
-  background-color: #600080;
+  background-color: var(--purple);
   color: antiquewhite;
-  border-bottom: 5px darkgray solid;
+  border-bottom: 5px var(--darkgray) solid;
 }
 /* make ul a flex container so links are evenly spaced */
 nav ul {
@@ -41,7 +37,7 @@ nav ul {
 
 /* remove default link text decoration (underline) */
 a {
-  color: aquamarine;
+  color: var(--aqua);
   text-decoration: none;
 }
 
@@ -91,12 +87,13 @@ p {
 #My-Projects {
   text-align: center;
 }
-
+/* set up flex container for the smaller project boxes 2 rows of 2 on PC screen */
 .box-container {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
 }
+/*  made boxes flex items to stack the header ontop and center the header on the images */
 .box {
   display: flex;
   flex-direction: column;
@@ -122,6 +119,7 @@ p {
   padding-top: 10px;
 }
 
+/* set footer to felx container to align links to the right */
 footer {
   display: flex;
   justify-content: flex-end;
@@ -133,7 +131,7 @@ footer {
   border-top: 5px darkgray solid;
   margin-top: 20px;
 }
-
+/* set list to flex container to space links out evenly */
 footer ul {
   display: flex;
   justify-content: space-between;
