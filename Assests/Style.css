@@ -3,8 +3,10 @@
   --aqua: aquamarine;
   --white: antiquewhite;
   --darkgray: darkgray;
+  --darkblue: #000066;
 }
 body {
+  background-color: lightblue;
   margin: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -71,4 +73,46 @@ h1 {
 
 #My-Projects {
   text-align: center;
+}
+
+.box {
+  height: 300px;
+  width: 500px;
+  margin: 10px;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-container img {
+  height: 300px;
+  width: 500px;
+}
+
+.box-header {
+  position: relative;
+  margin: 10px;
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15%;
+  width: 100%;
+  background-color: var(--purple);
+  color: var(--white);
+  border-top: 5px darkgray solid;
+  margin-top: 20px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  margin-right: 25px;
 }
