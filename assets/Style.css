@@ -11,6 +11,7 @@ body {
   margin: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
 /* setting up flex container for header with spacing (name on left, links on right) and design */
 #main-header {
   display: flex;
@@ -43,6 +44,10 @@ a {
 
 h1 {
   margin-left: 25px;
+}
+
+h2 {
+  font-size: 50px;
 }
 
 p {
@@ -80,7 +85,7 @@ p {
 }
 
 #About-Me img {
-  height: 300px;
+  height: 400px;
   width: 300px;
   border: var(--purple) solid 5px;
 }
